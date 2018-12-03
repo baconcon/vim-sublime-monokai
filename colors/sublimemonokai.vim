@@ -571,16 +571,25 @@ hi! link phpVarSelector     Identifier
 " Python
 
 " This configuration assumed python-mode
+hi! link pythonBuiltinFunc SublimeFunctionCall
+hi! link pythonBuiltinObj  SublimeType
+hi! link pythonClassArg    Tag
+" I honestly prefer this to be `Normal`.
+call s:h('pythonClassArg', { 'fg': s:green, 'format': 'italic' })
+hi! link pythonClassDef    SublimeType
+hi! link pythonClassName   Tag
+hi! link pythonClassVar    SublimeContextParam
 hi! link pythonConditional Conditional
-hi! link pythonException   Keyword
-hi! link pythonFunction    Tag
+hi! link pythonExceptionClass SublimeType
+hi! link pythonFuncArg     SublimeContextParam
+hi! link pythonFuncDef     SublimeType
+hi! link pythonFuncName    Tag
+hi! link pythonKeyword     Keyword
+hi! link pythonImport      Keyword
 hi! link pythonInclude     Keyword
-" XXX: def parens are, for some reason, included in this group.
-hi! link pythonParam       SublimeContextParam
-" XXX: pythonStatement covers a bit too much...unfortunately, this means that
-" some keywords, like `def`, can't be highlighted like in Sublime yet.
+hi! link pythonRaise       Keyword
+hi! link pythonRun         Comment
 hi! link pythonStatement   Keyword
-" FIXME: Python special regexp sequences aren't highlighted. :\
 
 " QuickScope plugin
 call s:h('QuickScopePrimary',   { 'bg': s:lightgrey, 'fg': s:black,     'format': 'underline' })
