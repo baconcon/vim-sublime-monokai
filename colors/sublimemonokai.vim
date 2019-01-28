@@ -143,12 +143,13 @@ call s:h('ErrorMsg',     { 'fg': s:black,       'bg': s:red,      'format': 'sta
 hi! link FoldColumn SublimeDarkBlack
 call s:h('Folded',       { 'fg': s:warmgrey,    'bg': s:darkblack                          })
 call s:h('Incsearch',    {                                                                 })
-call s:h('LineNr',       { 'fg': s:grey,        'bg': s:lightblack                         })
+"call s:h('LineNr',       { 'fg': s:grey,        'bg': s:lightblack                         })
+call s:h('LineNr',       { 'fg': s:grey                                                    })
 call s:h('MatchParen',   { 'format': 'reverse'                                             })
 hi! link ModeMsg SublimeYellow
 hi! link MoreMsg SublimeYellow
 hi! link NonText SublimeLightGrey
-call s:h('Normal',       { 'fg': s:white,       'bg': s:black                              })
+"call s:h('Normal',       { 'fg': s:white,       'bg': s:black                              })
 call s:h('Pmenu',        { 'fg': s:lightblack,  'bg': s:white                              })
 call s:h('PmenuSbar',    {                                                                 })
 call s:h('PmenuSel',     { 'fg': s:aqua,        'bg': s:black,    'format': 'reverse,bold' })
@@ -205,7 +206,7 @@ hi! link SpecialComment SublimeAqua
 call s:h('Underlined',    { 'format': 'underline' })
 " call s:h('Ignore',        {})
 call s:h('Error',         { 'fg': s:red, 'bg': s:darkred })
-hi! link Todo           Comment
+"hi! link Todo           Comment
 
 " Some highlighting groups custom to the Sublime Monokai theme
 
